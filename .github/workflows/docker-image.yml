@@ -19,7 +19,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
-      - run: docker build -t ghcr.io/YutingTayson/fgr534ffd:1.0
+      - run: docker build -t ghcr.io/YutingTayson/fgr534ffd:1.0 .
       - run: docker push ghcr.io/YutingTayson/fgr534ffd:1.0
       
         
